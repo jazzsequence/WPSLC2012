@@ -9,8 +9,8 @@ Template: wordcamp-base-v2
 
 ### Screenshots
 
-![Full width](https://github.com/jazzsequence/WPSLC2012/blob/master/screenshot-1.png?raw=true)
+![Full width](https://github.com/jazzsequence/WPSLC2012/blob/master/screenshot-1.png?raw=true)  
 Full screen desktop view
 
-![Mobile width](https://github.com/jazzsequence/WPSLC2012/blob/master/screenshot-2.png?raw=true)
+![Mobile width](https://github.com/jazzsequence/WPSLC2012/blob/master/screenshot-2.png?raw=true)  
 Mobile view
