@@ -254,3 +254,33 @@ h1.entry-title {
 #colophon a { text-shadow: none; }
 #colophon a, #colophon a:link, #colophon a:visited { color: #fff; text-decoration: none; }
 #colophon a:hover, #colophon a:active { color: #c26004; text-shadow: 0px 0px 1px #fcfaf7; }
+
+/* mobile queries */
+
+@media only screen and (max-width: 977px) {
+    ul#menu-top-nav { overflow: hidden; } /* when the menu starts to wrap, we'll just hide it */
+}
+
+@media only screen and (max-width: 767px) {
+    #main { padding: 10px 0; width: 100%; }
+    #primary, #secondary {
+        float: none;
+        width: 94%;
+        margin-right: 0;
+        padding: 0 3%;
+    }
+    #colophon { width: 94%; padding: 0 3%; text-align: center; }
+}
+
+@media only screen and (max-width: 584px) {
+    ul#menu-top-nav li.menu-item-home { display: none; } /* at the point that there is less than 3 menu items in the nav, we'll hide the home link */
+}
+
+@media only screen and (max-width: 431px) { /* this is the size that the site info links overlap. we'll just display them block-style for mobile views */
+    #colophon .site-info-generator,
+    #colophon .site-info-network {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
