@@ -26,4 +26,99 @@ Git Repo: https://github.com/jazzsequence/WPSLC2012
     http://www.opensource.org/licenses/gpl-3.0.html
 */
 
+/*
+    Palettes
+    Mayan sunrise (http://www.colourlovers.com/palette/2256859/Mayan_sunrise)
+    #2B2219 - text
+    #894C47 - headings / links(?)
+    #8A5E48 - heading/links alt
+    #C8B3A0 - background
+    #C29367 - accents
+
+    - or -
+
+    Mayan chocolate
+    #413124 - text
+    #463929 - text (alt?)
+    #7D625B - links
+    #6F533D - links / headings alt
+    #E8DBD2 - background
+*/
+
 @import url('../wordcamp-base-v2/style.css');
+
+body {
+    background: url('img/weeping.png') no-repeat center #413124;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #2B2219;
+}
+#page { margin: 0 20px; }
+#main {
+    background: #f4f0ed;
+    max-width: 1100px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid #463929;
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+body, input, textarea, .page-title span, .pingback a.url, h3#comments-title, h3#reply-title, #cancel-comment-reply-link, .form-allowed-tags, #site-info, #site-title, #wp-calendar, .comment-meta, .comment-body tr th, .comment-body thead th, .entry-content label, .entry-content tr th, .entry-content thead th, .entry-title, #respond label, .navigation, .page-title, .pingback p, .reply, .wp-caption-text { font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, "Bitstream Charter", serif }
+h1, h2, h3, h4, h5, h6, #site-title, #site-description, #access .menu, #access div.menu ul, #access a.button, h3#comments-title, h3#reply-title, .entry-title, .entry-meta, .entry-utility, .widget-title, .callout { font-family: ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
+a, a:link, a:visited { color: #894C47; }
+a:hover, a:active { color: #7D625B; }
+h1 a { text-decoration: none; }
+
+/* header */
+
+hgroup {
+    background: url('../wordcamp-base-v2/images/headers/inkwell.jpg') no-repeat right; /* replace this with your header image url */
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 158px;
+    max-width: 1100px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #463929;
+    -moz-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+hgroup h1.site-title a {
+    color: #894C47;
+    font-size: 2em;
+    font-style: italic;
+    position: absolute;
+    bottom: 15px;
+    display:block;
+    text-shadow: 1px 1px 0px #C8B3A0;
+}
+hgroup h2 {
+    position: absolute;;
+    bottom: 0;
+    display: block;
+}
+
+/* nav */
+
+
+
+/* content */
+
+article.sticky {
+    background: #fefefe;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #C29367;
+    -moz-box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
+    box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
+}
+
+h1.entry-title {
+    font-size: 1.5em;
+}
