@@ -4,7 +4,7 @@ Description: A WordPress child theme of WordCamp Base v2, which is a fork of `_s
 Author: Chris Reynolds  
 Author URI: http://museumthemes.com  
 License: GNU General Public License v3.0  
-License URI: http://www.opensource.org/licenses/gpl-3.0.html  
+License URI: http://www.gnu.org/licenses/gpl-3.0.html  
 Template: wordcamp-base-v2  
 
 ### Screenshots
