@@ -54,16 +54,34 @@ body {
     color: #2B2219;
 }
 #page { margin: 0 20px; }
+#primary {
+    float: left;
+    width: 65.4%;
+}
+#secondary {
+    display: block;
+    float: right;
+    width: 30.75%;
+}
+#secondary p {
+    word-wrap: break-word;
+}
+#colophon {
+    clear: both;
+    width: 100%;
+}
 #main {
     background: #f4f0ed;
+    width: 100%;
     max-width: 1100px;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 10px 20px;
     border: 1px solid #463929;
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    overflow: auto;
 }
 body, input, textarea, .page-title span, .pingback a.url, h3#comments-title, h3#reply-title, #cancel-comment-reply-link, .form-allowed-tags, #site-info, #site-title, #wp-calendar, .comment-meta, .comment-body tr th, .comment-body thead th, .entry-content label, .entry-content tr th, .entry-content thead th, .entry-title, #respond label, .navigation, .page-title, .pingback p, .reply, .wp-caption-text { font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, "Bitstream Charter", serif }
 h1, h2, h3, h4, h5, h6, #site-title, #site-description, #access .menu, #access div.menu ul, #access a.button, h3#comments-title, h3#reply-title, .entry-title, .entry-meta, .entry-utility, .widget-title, .callout { font-family: ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
@@ -80,7 +98,7 @@ hgroup {
     height: 158px;
     max-width: 1100px;
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px auto 10px;
     border: 1px solid #463929;
     -moz-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
@@ -105,7 +123,13 @@ hgroup h2 {
 
 /* nav */
 
-
+nav.main-navigation {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0px auto;
+    float: none;
+    height: 24px;
+}
 
 /* content */
 
@@ -121,4 +145,9 @@ article.sticky {
 
 h1.entry-title {
     font-size: 1.5em;
+    text-shadow: 1px 1px 0px #C8B3A0;
+}
+
+.entry-meta {
+    font-size: 0.8em;
 }
