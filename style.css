@@ -26,88 +26,75 @@ Git Repo: https://github.com/jazzsequence/WPSLC2012
     http://www.opensource.org/licenses/gpl-3.0.html
 */
 
-/*
-    Palettes
-    Mayan sunrise (http://www.colourlovers.com/palette/2256859/Mayan_sunrise)
-    #2B2219 - text
-    #894C47 - headings / links(?)
-    #8A5E48 - heading/links alt
-    #C8B3A0 - background
-    #C29367 - accents
-
-    - or -
-
-    Mayan chocolate
-    #413124 - text
-    #463929 - text (alt?)
-    #7D625B - links
-    #6F533D - links / headings alt
-    #E8DBD2 - background
-*/
-
 @import url('../wordcamp-base-v2/style.css');
 
 body {
-    background: url('img/weeping.png') no-repeat center #413124;
+    background: url('img/weeping.png') no-repeat center 250px #413124;
     -moz-background-size: cover;
     background-size: cover;
     color: #2B2219;
+    text-shadow: 1px 1px 0 #fff;
 }
-#page { margin: 0 20px; }
-#primary {
-    float: left;
-    width: 65.4%;
-}
-#secondary {
-    display: block;
-    float: right;
-    width: 30.75%;
-}
-#secondary p {
-    word-wrap: break-word;
-}
-#colophon {
-    clear: both;
-    width: 100%;
-}
+
+::-moz-selection { background: #8a0b00; color: #fff; text-shadow: 1px 1px 0 #2B2219; }
+::selection { background: #8a0b00; color: #fff; text-shadow: 1px 1px 0 #2B2219; }
+
 #main {
-    background: #f4f0ed;
+    background: #fcfaf7;
     width: 100%;
     max-width: 1100px;
     display: block;
-    margin: 10px auto;
+    margin: 0 auto 10px;
     padding: 10px 20px;
-    border: 1px solid #463929;
-    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    border-left: 1px solid #463929;
+    border-right: 1px solid #463929;
+    border-bottom: 1px solid #463929;
+    -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
     overflow: auto;
 }
+
 body, input, textarea, .page-title span, .pingback a.url, h3#comments-title, h3#reply-title, #cancel-comment-reply-link, .form-allowed-tags, #site-info, #site-title, #wp-calendar, .comment-meta, .comment-body tr th, .comment-body thead th, .entry-content label, .entry-content tr th, .entry-content thead th, .entry-title, #respond label, .navigation, .page-title, .pingback p, .reply, .wp-caption-text { font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, "Bitstream Charter", serif }
-h1, h2, h3, h4, h5, h6, #site-title, #site-description, #access .menu, #access div.menu ul, #access a.button, h3#comments-title, h3#reply-title, .entry-title, .entry-meta, .entry-utility, .widget-title, .callout { font-family: ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
-a, a:link, a:visited { color: #894C47; }
-a:hover, a:active { color: #7D625B; }
+h1, h2, h3, h4, h5, h6, #site-title, #site-description, #access .menu, #access div.menu ul, #access a.button, h3#comments-title, h3#reply-title, .entry-title, .entry-meta, .entry-utility, .widget-title, .callout, #colophon a { font-family: ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
+a, a:link, a:visited { color: #8a0b00; }
+a:hover, a:active { color: #c26004; text-decoration: none; }
 h1 a { text-decoration: none; }
+a {
+  -webkit-transition: all 0.3s ease!important;
+  -moz-transition: all 0.3s ease!important;
+  -o-transition: all 0.3s ease!important;
+  transition: all  0.3s ease!important;
+}
 
 /* header */
-
+header#masthead {
+    padding-top: 20px;
+    background: #2B2219;
+    border-bottom: 1px solid #463929;
+    -moz-box-shadow: 5px 0 24px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 0 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0 24px rgba(0, 0, 0, 0.3);
+}
 hgroup {
-    background: url('../wordcamp-base-v2/images/headers/inkwell.jpg') no-repeat right; /* replace this with your header image url */
+    /*background: url('../wordcamp-base-v2/images/headers/inkwell.jpg') no-repeat right; /* replace this with your header image url */
     -moz-background-size: cover;
     background-size: cover;
     height: 158px;
     max-width: 1100px;
     padding: 20px;
-    margin: 20px auto 10px;
-    border: 1px solid #463929;
+    margin: auto;
+    /*border-top: 1px solid #463929;
+    border-right: 1px solid #463929;
+    border-left: 1px solid #463929;
     -moz-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);*/
     position: relative;
 }
 
 hgroup h1.site-title a {
-    color: #894C47;
+    color: #8a0b00;
     font-size: 2em;
     font-style: italic;
     position: absolute;
@@ -124,20 +111,90 @@ hgroup h2 {
 /* nav */
 
 nav.main-navigation {
+    font-family: ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    text-transform: uppercase;
     width: 100%;
-    max-width: 1140px;
-    margin: 0px auto;
     float: none;
-    height: 24px;
+    background: #8a0b00;
 }
 
+ul#menu-top-nav {
+    width: 100%;
+    max-width: 1140px;
+    height: 44px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+}
+ul#menu-top-nav li {
+    padding: 10px 0;
+    float: none;
+    display: inline-block;
+    width: 12em;
+}
+ul#menu-top-nav li:hover, ul#menu-top-nav li:hover li:hover, ul#menu-top-nav li:hover li li:hover, ul#menu-top-nav li.current_page_item {
+    -webkit-transition: all 0.3s ease!important;
+    -moz-transition: all 0.3s ease!important;
+    -o-transition: all 0.3s ease!important;
+    transition: all  0.3s ease!important;
+    background: #fefefe;
+}
+ul#menu-top-nav li:hover li {
+    -webkit-transition: all 0.3s ease!important;
+    -moz-transition: all 0.3s ease!important;
+    -o-transition: all 0.3s ease!important;
+    transition: all  0.3s ease!important;
+    background: #ece4d9;
+}
+ul#menu-top-nav li a,
+ul#menu-top-nav li a:link,
+ul#menu-top-nav li a:visited {
+    color: #fff;
+    text-shadow: none;
+}
+ul#menu-top-nav li li a,
+ul#menu-top-nav li li a:link,
+ul#menu-top-nav li li a:visited,
+ul#menu-top-nav li li:hover li a,
+ul#menu-top-nav li li:hover li a:link,
+ul#menu-top-nav li li:hover li a:visited,
+ul#menu-top-nav li.current_page_item a {
+    color: #8a0b00;
+}
+ul#menu-top-nav li:hover a,
+ul#menu-top-nav li:hover li:hover a,
+ul#menu-top-nav li:hover li li:hover a {
+    color: #c26004;
+}
+ul#menu-top-nav li:hover ul {  height: auto; padding: 10px 0; }
+ul#menu-top-nav li li { display: block; top: 10px; }
+ul#menu-top-nav li li {
+    -webkit-transition: all .750s ease-in .25s;
+    -moz-transition: all .750s ease-in .25s;
+    -o-transition: all .750s ease-in .25s;
+    transition: all .750s ease-in .25s;
+}
+ul#menu-top-nav li:hover li, ul#menu-top-nav li li:hover { height: 24px; }
+ul#menu-top-nav ul ul { top: -20px; }
+ul#menu-top-nav li li li { top: 10px; }
+
 /* content */
+
+#primary {
+    float: left;
+    width: 65.4%;
+}
+
+article {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #c26004;
+}
 
 article.sticky {
     background: #fefefe;
     padding: 15px;
     border-radius: 5px;
-    border: 1px solid #C29367;
+    border: 1px solid #8a0b00;
     -moz-box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
     -webkit-box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
     box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
@@ -151,3 +208,49 @@ h1.entry-title {
 .entry-meta {
     font-size: 0.8em;
 }
+
+/* sidebar */
+
+#secondary {
+    display: block;
+    float: right;
+    width: 30.75%;
+}
+
+#secondary h1 {
+    font-size: 1.2em;
+    border-bottom: 1px dotted #c26004;
+    margin-bottom: 1.2em;
+}
+
+#secondary p {
+    word-wrap: break-word;
+}
+
+#secondary aside {
+    padding: 1.5em 0;
+    margin: 0;
+}
+
+/* footer */
+
+#colophon {
+    clear: both;
+    width: 100%;
+}
+
+#colophon .site-info {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    display: block;
+}
+#colophon .site-info-generator {
+    float: right;
+}
+#colophon .site-info-network {
+    float: left;
+}
+#colophon a { text-shadow: none; }
+#colophon a, #colophon a:link, #colophon a:visited { color: #fff; text-decoration: none; }
+#colophon a:hover, #colophon a:active { color: #c26004; text-shadow: 0px 0px 1px #fcfaf7; }
