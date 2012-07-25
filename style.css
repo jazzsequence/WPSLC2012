@@ -28,259 +28,315 @@ Git Repo: https://github.com/jazzsequence/WPSLC2012
 
 @import url('../wordcamp-base-v2/style.css');
 
-body {
-    background: url('img/weeping.png') no-repeat center 250px #413124;
-    -moz-background-size: cover;
-    background-size: cover;
-    color: #2B2219;
-    text-shadow: 1px 1px 0 #fff;
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo Regular'), local('Exo-Regular'), url(http://themes.googleusercontent.com/static/fonts/exo/v1/ZcGd2dvMSgl3mHN3lKAjNw.woff) format('woff');
 }
 
-::-moz-selection { background: #8a0b00; color: #fff; text-shadow: 1px 1px 0 #2B2219; }
-::selection { background: #8a0b00; color: #fff; text-shadow: 1px 1px 0 #2B2219; }
+body {
+    background:url('http://2012.slc.wordcamp.org/files/2012/07/weeping.png') no-repeat center 250px #413124;
+    -moz-background-size:cover;
+    background-size:cover;
+    color:#2B2219;
+    text-shadow:1px 1px 0 #fff;
+}
+
+::-moz-selection {
+    background:#8a0b00;
+    color:#fff;
+    text-shadow:1px 1px 0 #2B2219;
+}
+
+::selection {
+    background:#8a0b00;
+    color:#fff;
+    text-shadow:1px 1px 0 #2B2219;
+}
 
 #main {
-    background: #fcfaf7;
-    width: 100%;
-    max-width: 1100px;
-    display: block;
-    margin: 0 auto 10px;
-    padding: 10px 20px;
-    border-left: 1px solid #463929;
-    border-right: 1px solid #463929;
-    border-bottom: 1px solid #463929;
-    -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
-    overflow: auto;
+    background:#fcfaf7;
+    width:100%;
+    max-width:1100px;
+    display:block;
+    margin:0 auto 10px;
+    padding:10px 20px;
+    border-left:1px solid #463929;
+    border-right:1px solid #463929;
+    border-bottom:1px solid #463929;
+    -moz-box-shadow:0 5px 15px rgba(0,0,0,0.6);
+    -webkit-box-shadow:0 5px 15px rgba(0,0,0,0.6);
+    box-shadow:0 5px 15px rgba(0,0,0,0.6);
+    overflow:auto;
 }
 
-body, input, textarea, .page-title span, .pingback a.url, h3#comments-title, h3#reply-title, #cancel-comment-reply-link, .form-allowed-tags, #site-info, #site-title, #wp-calendar, .comment-meta, .comment-body tr th, .comment-body thead th, .entry-content label, .entry-content tr th, .entry-content thead th, .entry-title, #respond label, .navigation, .page-title, .pingback p, .reply, .wp-caption-text { font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, "Bitstream Charter", serif }
-h1, h2, h3, h4, h5, h6, #site-title, #site-description, #access .menu, #access div.menu ul, #access a.button, h3#comments-title, h3#reply-title, .entry-title, .entry-meta, .entry-utility, .widget-title, .callout, #colophon a { font-family: ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
-a, a:link, a:visited { color: #8a0b00; }
-a:hover, a:active { color: #c26004; text-decoration: none; }
-h1 a { text-decoration: none; }
+body,input,textarea,.page-title span,.pingback a.url,h3#comments-title,h3#reply-title,#cancel-comment-reply-link,.form-allowed-tags,#site-info,#site-title,#wp-calendar,.comment-meta,.comment-body tr th,.comment-body thead th,.entry-content label,.entry-content tr th,.entry-content thead th,.entry-title,#respond label,.navigation,.page-title,.pingback p,.reply,.wp-caption-text {
+    font-family:ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, "Bitstream Charter", serif;
+}
+
+h1,h2,h3,h4,h5,h6,#site-title,#site-description,#access .menu,#access div.menu ul,#access a.button,h3#comments-title,h3#reply-title,.entry-title,.entry-meta,.entry-utility,.widget-title,.callout,#colophon a {
+    font-family:'Exo', ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+a,a:link,a:visited {
+    color:#8a0b00;
+}
+
+a:hover,a:active {
+    color:#c26004;
+    text-decoration:none;
+}
+
+h1 a {
+    text-decoration:none;
+}
+
 a {
-  -webkit-transition: all 0.3s ease!important;
-  -moz-transition: all 0.3s ease!important;
-  -o-transition: all 0.3s ease!important;
-  transition: all  0.3s ease!important;
+    -webkit-transition:all .3s ease!important;
+    -moz-transition:all .3s ease!important;
+    -o-transition:all .3s ease!important;
+    transition:all .3s ease!important;
 }
 
-/* header */
 header#masthead {
-    padding-top: 20px;
-    background: #2B2219;
-    border-bottom: 1px solid #463929;
-    -moz-box-shadow: 5px 0 24px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 5px 0 24px rgba(0, 0, 0, 0.3);
-    box-shadow: 5px 0 24px rgba(0, 0, 0, 0.3);
+    padding-top:20px;
+    background:#2B2219;
+    border-bottom:1px solid #463929;
+    -moz-box-shadow:5px 0 24px rgba(0,0,0,0.3);
+    -webkit-box-shadow:5px 0 24px rgba(0,0,0,0.3);
+    box-shadow:5px 0 24px rgba(0,0,0,0.3);
 }
+
 hgroup {
-    /*background: url('../wordcamp-base-v2/images/headers/inkwell.jpg') no-repeat right; /* replace this with your header image url */
-    -moz-background-size: cover;
-    background-size: cover;
-    height: 158px;
-    max-width: 1100px;
-    padding: 20px;
-    margin: auto;
-    /*border-top: 1px solid #463929;
-    border-right: 1px solid #463929;
-    border-left: 1px solid #463929;
-    -moz-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);*/
-    position: relative;
+    -moz-background-size:cover;
+    background-size:cover;
+    max-width:1100px;
+    padding:20px;
+    margin:auto;
+    position:relative;
 }
 
 hgroup h1.site-title a {
-    color: #8a0b00;
-    font-size: 2em;
-    font-style: italic;
-    position: absolute;
-    bottom: 15px;
+    color:#8a0b00;
+    font-size:2em;
+    font-style:italic;
+    position:absolute;
+    bottom:15px;
     display:block;
-    text-shadow: 1px 1px 0px #C8B3A0;
-}
-hgroup h2 {
-    position: absolute;;
-    bottom: 0;
-    display: block;
+    text-shadow:1px 1px 0 #C8B3A0;
 }
 
-/* nav */
+hgroup h2 {
+    position:absolute;
+    bottom:0;
+    display:block;
+}
 
 nav.main-navigation {
-    font-family: ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-    text-transform: uppercase;
-    width: 100%;
-    float: none;
-    background: #8a0b00;
+    font-family:'Exo', ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    text-transform:uppercase;
+    width:100%;
+    float:none;
+    background:#8a0b00;
 }
 
 ul#menu-top-nav {
-    width: 100%;
-    max-width: 1140px;
-    height: 44px;
-    margin: 0px auto;
-    display: block;
-    text-align: center;
+    width:100%;
+    max-width:1140px;
+    height:44px;
+    margin:0 auto;
+    display:block;
+    text-align:center;
 }
-ul#menu-top-nav li {
-    padding: 10px 0;
-    float: none;
-    display: inline-block;
-    width: 12em;
-}
-ul#menu-top-nav li:hover, ul#menu-top-nav li:hover li:hover, ul#menu-top-nav li:hover li li:hover, ul#menu-top-nav li.current_page_item {
-    -webkit-transition: all 0.3s ease!important;
-    -moz-transition: all 0.3s ease!important;
-    -o-transition: all 0.3s ease!important;
-    transition: all  0.3s ease!important;
-    background: #fefefe;
-}
-ul#menu-top-nav li:hover li {
-    -webkit-transition: all 0.3s ease!important;
-    -moz-transition: all 0.3s ease!important;
-    -o-transition: all 0.3s ease!important;
-    transition: all  0.3s ease!important;
-    background: #ece4d9;
-}
-ul#menu-top-nav li a,
-ul#menu-top-nav li a:link,
-ul#menu-top-nav li a:visited {
-    color: #fff;
-    text-shadow: none;
-}
-ul#menu-top-nav li li a,
-ul#menu-top-nav li li a:link,
-ul#menu-top-nav li li a:visited,
-ul#menu-top-nav li li:hover li a,
-ul#menu-top-nav li li:hover li a:link,
-ul#menu-top-nav li li:hover li a:visited,
-ul#menu-top-nav li.current_page_item a {
-    color: #8a0b00;
-}
-ul#menu-top-nav li:hover a,
-ul#menu-top-nav li:hover li:hover a,
-ul#menu-top-nav li:hover li li:hover a {
-    color: #c26004;
-}
-ul#menu-top-nav li:hover ul {  height: auto; padding: 10px 0; }
-ul#menu-top-nav li li { display: block; top: 10px; }
-ul#menu-top-nav li li {
-    -webkit-transition: all .750s ease-in .25s;
-    -moz-transition: all .750s ease-in .25s;
-    -o-transition: all .750s ease-in .25s;
-    transition: all .750s ease-in .25s;
-}
-ul#menu-top-nav li:hover li, ul#menu-top-nav li li:hover { height: 24px; }
-ul#menu-top-nav ul ul { top: -20px; }
-ul#menu-top-nav li li li { top: 10px; }
 
-/* content */
+ul#menu-top-nav li {
+    padding:10px 0;
+    float:none;
+    display:inline-block;
+    width:12em;
+}
+
+ul#menu-top-nav li:hover,ul#menu-top-nav li:hover li:hover,ul#menu-top-nav li:hover li li:hover,ul#menu-top-nav li.current_page_item {
+    -webkit-transition:all .3s ease!important;
+    -moz-transition:all .3s ease!important;
+    -o-transition:all .3s ease!important;
+    transition:all .3s ease!important;
+    background:#fefefe;
+}
+
+ul#menu-top-nav li:hover li {
+    -webkit-transition:all .3s ease!important;
+    -moz-transition:all .3s ease!important;
+    -o-transition:all .3s ease!important;
+    transition:all .3s ease!important;
+    background:#ece4d9;
+}
+
+ul#menu-top-nav li a,ul#menu-top-nav li a:link,ul#menu-top-nav li a:visited {
+    color:#fff;
+    text-shadow:none;
+}
+
+ul#menu-top-nav li li a,ul#menu-top-nav li li a:link,ul#menu-top-nav li li a:visited,ul#menu-top-nav li li:hover li a,ul#menu-top-nav li li:hover li a:link,ul#menu-top-nav li li:hover li a:visited,ul#menu-top-nav li.current_page_item a {
+    color:#8a0b00;
+}
+
+ul#menu-top-nav li:hover a,ul#menu-top-nav li:hover li:hover a,ul#menu-top-nav li:hover li li:hover a {
+    color:#c26004;
+}
+
+ul#menu-top-nav li:hover ul {
+    height:auto;
+    padding:10px 0;
+}
+
+ul#menu-top-nav li li {
+    display:block;
+    top:10px;
+    -webkit-transition:all .75s ease-in .25s;
+    -moz-transition:all .75s ease-in .25s;
+    -o-transition:all .75s ease-in .25s;
+    transition:all .75s ease-in .25s;
+}
+
+ul#menu-top-nav li:hover li,ul#menu-top-nav li li:hover {
+    height:24px;
+}
+
+ul#menu-top-nav ul ul {
+    top:-20px;
+}
+
+ul#menu-top-nav li li li {
+    top:10px;
+}
 
 #primary {
-    float: left;
-    width: 65.4%;
+    float:left;
+    width:65.4%;
 }
 
 article {
-    padding-bottom: 15px;
-    border-bottom: 1px dotted #c26004;
+    padding-bottom:15px;
+    border-bottom:1px dotted #c26004;
 }
 
 article.sticky {
-    background: #fefefe;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #8a0b00;
-    -moz-box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
-    -webkit-box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
-    box-shadow: 0 0 5px rgba(194, 147, 103, 0.5);
+    background:#fefefe;
+    padding:15px;
+    border-radius:5px;
+    border:1px solid #8a0b00;
+    -moz-box-shadow:0 0 5px rgba(194,147,103,0.5);
+    -webkit-box-shadow:0 0 5px rgba(194,147,103,0.5);
+    box-shadow:0 0 5px rgba(194,147,103,0.5);
 }
 
 h1.entry-title {
-    font-size: 1.5em;
-    text-shadow: 1px 1px 0px #C8B3A0;
+    font-size:1.5em;
+    text-shadow:1px 1px 0 #C8B3A0;
 }
 
 .entry-meta {
-    font-size: 0.8em;
+    font-size:.8em;
 }
 
-/* sidebar */
-
 #secondary {
-    display: block;
-    float: right;
-    width: 30.75%;
+    display:block;
+    float:right;
+    width:30.75%;
 }
 
 #secondary h1 {
-    font-size: 1.2em;
-    border-bottom: 1px dotted #c26004;
-    margin-bottom: 1.2em;
+    font-size:1.2em;
+    border-bottom:1px dotted #c26004;
+    margin-bottom:1.2em;
 }
 
 #secondary p {
-    word-wrap: break-word;
+    word-wrap:break-word;
 }
 
 #secondary aside {
-    padding: 1.5em 0;
-    margin: 0;
+    padding:1.5em 0;
+    margin:0;
 }
 
-/* footer */
-
 #colophon {
-    clear: both;
-    width: 100%;
+    clear:both;
+    width:100%;
 }
 
 #colophon .site-info {
-    width: 100%;
-    max-width: 1140px;
-    margin: auto;
-    display: block;
+    width:100%;
+    max-width:1140px;
+    margin:auto;
+    display:block;
 }
-#colophon .site-info-generator {
-    float: right;
-}
-#colophon .site-info-network {
-    float: left;
-}
-#colophon a { text-shadow: none; }
-#colophon a, #colophon a:link, #colophon a:visited { color: #fff; text-decoration: none; }
-#colophon a:hover, #colophon a:active { color: #c26004; text-shadow: 0px 0px 1px #fcfaf7; }
 
-/* mobile queries */
+#colophon .site-info-generator {
+    float:right;
+}
+
+#colophon .site-info-network {
+    float:left;
+}
+
+#colophon a {
+    text-shadow:none;
+}
+
+#colophon a,#colophon a:link,#colophon a:visited {
+    color:#fff;
+    text-decoration:none;
+}
+
+#colophon a:hover,#colophon a:active {
+    color:#c26004;
+    text-shadow:0 0 1px #fcfaf7;
+}
+
+#secondary ul, #secondary ol {
+    list-style:none;
+    margin:0 0 1.5em;
+}
 
 @media only screen and (max-width: 977px) {
-    ul#menu-top-nav { overflow: hidden; } /* when the menu starts to wrap, we'll just hide it */
+    ul#menu-top-nav {
+        overflow:hidden;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-    #main { padding: 10px 0; width: 100%; }
-    #primary, #secondary {
-        float: none;
-        width: 94%;
-        margin-right: 0;
-        padding: 0 3%;
+    #main {
+        padding:10px 0;
+        width:100%;
     }
-    #colophon { width: 94%; padding: 0 3%; text-align: center; }
+    
+    #primary,#secondary {
+        float:none;
+        width:94%;
+        margin-right:0;
+        padding:0 3%;
+    }
+    
+    #colophon {
+        width:94%;
+        padding:0 3%;
+        text-align:center;
+    }
 }
 
 @media only screen and (max-width: 584px) {
-    ul#menu-top-nav li.menu-item-home { display: none; } /* at the point that there is less than 3 menu items in the nav, we'll hide the home link */
+    ul#menu-top-nav li.menu-item-home {
+        display:none;
+    }
 }
 
-@media only screen and (max-width: 431px) { /* this is the size that the site info links overlap. we'll just display them block-style for mobile views */
-    #colophon .site-info-generator,
-    #colophon .site-info-network {
-        float: none;
-        display: block;
-        margin: auto;
+@media only screen and (max-width: 431px) {
+    #colophon .site-info-generator,#colophon .site-info-network {
+        float:none;
+        display:block;
+        margin:auto;
     }
 }
