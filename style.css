@@ -109,8 +109,10 @@ header#masthead {
 }
 
 hgroup {
+    background: url(http://2012.slc.wordcamp.org/files/2012/07/capitolreef-castle.jpg) right no-repeat;
     -moz-background-size:cover;
     background-size:cover;
+    height: 183px;
     max-width:1100px;
     padding:20px;
     margin:auto;
@@ -127,10 +129,12 @@ hgroup h1.site-title a {
     text-shadow:1px 1px 0 #C8B3A0;
 }
 
-hgroup h2 {
+hgroup h2.site-description {
     position:absolute;
     bottom:0;
     display:block;
+    color: #fcfaf7;
+    text-shadow: none;
 }
 
 nav.main-navigation {
@@ -339,4 +343,8 @@ h1.entry-title {
         display:block;
         margin:auto;
     }
-}
+    .site-title {
+        bottom: 30px;
+        position: absolute;
+        width: 100%;
+    }
