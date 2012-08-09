@@ -331,10 +331,23 @@ h1.entry-title {
 }
 
 @media only screen and (max-width: 584px) {
-    ul#menu-top-nav li.menu-item-home {
-        display:none;
+    .menu-toggle {
+        display: none;
     }
-    
+    .assistive-text.skip-link {
+        display: none;
+    }
+    li.menu-item-home {
+        position: absolute;
+        left: -999em;
+    }
+    .menu-top-nav-container {
+        background: #51807E;
+        text-transform: uppercase;
+    }
+    .menu-top-nav-container a {
+        text-decoration: none;
+    }
     .hentry.speaker {
         width:100%;
     }
@@ -363,5 +376,8 @@ h1.entry-title {
     -moz-background-size: 520px 39px;
     background-size: 520px 39px;
     height: 50px;
+  }
+  header#masthead {
+    padding-top: 10px;
   }
 }
