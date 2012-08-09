@@ -27,64 +27,41 @@ Git Repo: https://github.com/jazzsequence/WPSLC2012
 */
 
 @import url('../wordcamp-base-v2/style.css');
-
-@font-face {
-  font-family: 'Exo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Exo Regular'), local('Exo-Regular'), url(http://themes.googleusercontent.com/static/fonts/exo/v1/ZcGd2dvMSgl3mHN3lKAjNw.woff) format('woff');
-}
-
 body {
-    background:url('http://2012.slc.wordcamp.org/files/2012/07/weeping.png') no-repeat center 250px #413124;
-    -moz-background-size:cover;
-    background-size:cover;
-    color:#2B2219;
-    text-shadow:1px 1px 0 #fff;
+    background: url(http://2012.slc.wordcamp.org/files/2012/08/bodybg.jpg) top left no-repeat #402215;
+    -moz-background-size: contain;
+    background-size: contain;
+    color:#452210;
 }
 
 ::-moz-selection {
-    background:#8a0b00;
+    background:#51807e;
     color:#fff;
-    text-shadow:1px 1px 0 #2B2219;
+    text-shadow:1px 1px 0 #452210;
 }
 
 ::selection {
-    background:#8a0b00;
+    background:#51807e;
     color:#fff;
-    text-shadow:1px 1px 0 #2B2219;
+    text-shadow:1px 1px 0 #452210;
 }
 
 #main {
-    background:#fcfaf7;
+    background: url(http://2012.slc.wordcamp.org/files/2012/08/contentbg.png) repeat-y;
     width:100%;
     max-width:1100px;
     display:block;
     margin:0 auto 10px;
-    padding:10px 20px;
-    border-left:1px solid #463929;
-    border-right:1px solid #463929;
-    border-bottom:1px solid #463929;
-    -moz-box-shadow:0 5px 15px rgba(0,0,0,0.6);
-    -webkit-box-shadow:0 5px 15px rgba(0,0,0,0.6);
-    box-shadow:0 5px 15px rgba(0,0,0,0.6);
+    padding: 10px 20px;
     overflow:auto;
 }
 
-body,input,textarea,.page-title span,.pingback a.url,h3#comments-title,h3#reply-title,#cancel-comment-reply-link,.form-allowed-tags,#site-info,#site-title,#wp-calendar,.comment-meta,.comment-body tr th,.comment-body thead th,.entry-content label,.entry-content tr th,.entry-content thead th,.entry-title,#respond label,.navigation,.page-title,.pingback p,.reply,.wp-caption-text {
-    font-family:ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, "Bitstream Charter", serif;
-}
-
-h1,h2,h3,h4,h5,h6,#site-title,#site-description,#access .menu,#access div.menu ul,#access a.button,h3#comments-title,h3#reply-title,.entry-title,.entry-meta,.entry-utility,.widget-title,.callout,#colophon a {
-    font-family:'Exo', ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-}
-
 a,a:link,a:visited {
-    color:#8a0b00;
+    color:#a48464;
 }
 
 a:hover,a:active {
-    color:#c26004;
+    color:#51807e;
     text-decoration:none;
 }
 
@@ -101,48 +78,27 @@ a {
 
 header#masthead {
     padding-top:20px;
-    background:#2B2219;
-    border-bottom:1px solid #463929;
-    -moz-box-shadow:5px 0 24px rgba(0,0,0,0.3);
-    -webkit-box-shadow:5px 0 24px rgba(0,0,0,0.3);
-    box-shadow:5px 0 24px rgba(0,0,0,0.3);
 }
 
 hgroup {
-    background: url(http://2012.slc.wordcamp.org/files/2012/07/capitolreef-castle.jpg) right no-repeat;
-    -moz-background-size:cover;
-    background-size:cover;
-    height: 183px;
+    background: url(http://2012.slc.wordcamp.org/files/2012/08/title.png) left top no-repeat;
+    background-size: contain;
+    height:100px;
     max-width:1100px;
-    padding:20px;
     margin:auto;
     position:relative;
 }
 
-hgroup h1.site-title a {
-    color:#8a0b00;
-    font-size:2em;
-    font-weight: bold;
+hgroup h1.site-title a, hgroup h2.site-description {
     position:absolute;
-    bottom:15px;
-    display:block;
-    text-shadow:1px 1px 0 #C8B3A0;
-}
-
-hgroup h2.site-description {
-    position:absolute;
-    bottom:0;
-    display:block;
-    color: #fcfaf7;
-    text-shadow: none;
+    left: 999em;
 }
 
 nav.main-navigation {
-    font-family:'Exo', ff-enzo-web-1, ff-enzo-web-2, "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
     text-transform:uppercase;
     width:100%;
     float:none;
-    background:#8a0b00;
+    background:#51807e;
 }
 
 ul#menu-top-nav {
@@ -166,7 +122,7 @@ ul#menu-top-nav li:hover,ul#menu-top-nav li:hover li:hover,ul#menu-top-nav li:ho
     -moz-transition:all .3s ease!important;
     -o-transition:all .3s ease!important;
     transition:all .3s ease!important;
-    background:#fefefe;
+    background:#e8d9ca;
 }
 
 ul#menu-top-nav li:hover li {
@@ -174,20 +130,20 @@ ul#menu-top-nav li:hover li {
     -moz-transition:all .3s ease!important;
     -o-transition:all .3s ease!important;
     transition:all .3s ease!important;
-    background:#ece4d9;
+    background:#e8d9ca;
 }
 
 ul#menu-top-nav li a,ul#menu-top-nav li a:link,ul#menu-top-nav li a:visited {
-    color:#fff;
+    color:#452210;
     text-shadow:none;
 }
 
 ul#menu-top-nav li li a,ul#menu-top-nav li li a:link,ul#menu-top-nav li li a:visited,ul#menu-top-nav li li:hover li a,ul#menu-top-nav li li:hover li a:link,ul#menu-top-nav li li:hover li a:visited,ul#menu-top-nav li.current_page_item a {
-    color:#8a0b00;
+    color:#452210;
 }
 
 ul#menu-top-nav li:hover a,ul#menu-top-nav li:hover li:hover a,ul#menu-top-nav li:hover li li:hover a {
-    color:#c26004;
+    color:#452210;
 }
 
 ul#menu-top-nav li:hover ul {
@@ -223,22 +179,62 @@ ul#menu-top-nav li li li {
 
 article {
     padding-bottom:15px;
-    border-bottom:1px dotted #c26004;
+    border-bottom:1px dotted #51807e;
 }
 
 article.sticky {
-    background:#fefefe;
+    background: rgba(164, 132, 101, 0.1);
     padding:15px;
     border-radius:5px;
-    border:1px solid #8a0b00;
-    -moz-box-shadow:0 0 5px rgba(194,147,103,0.5);
-    -webkit-box-shadow:0 0 5px rgba(194,147,103,0.5);
-    box-shadow:0 0 5px rgba(194,147,103,0.5);
+}
+
+.speaker-gravatar-list {
+    margin-bottom:1.5em;
+}
+
+.speaker-gravatar-list img {
+    padding:3px;
+    background:rgba(254, 254, 254, 0.3);
+    border:1px solid rgba(194,147,103,0.2);
+    margin:0 5px;
+}
+
+.speaker-bio img {
+    float:left;
+    margin-right:10px;
+}
+
+.hentry.speaker {
+    background:rgba(254, 254, 254, 0.3);
+    width:44%;
+    padding:2%;
+    margin-left:2%;
+    border:1px solid rgba(194,147,103,0.2);
+    float:left;
+    -moz-box-shadow:2px 4px 0 rgba(194,147,103,0.2);
+    -webkit-box-shadow:2px 4px 0 rgba(194,147,103,0.2);
+    box-shadow:2px 4px 0 rgba(194,147,103,0.2);
+}
+.hentry.speaker a, .hentry.speaker a:link, .hentry.speaker a:visited{
+    color: #29160e;
+}
+.hentry.speaker a:hover, .hentry.speaker a:active {
+    color: #51807e;
+}
+
+#joe-boydston,#jason-gill,#john-levandowski,#dustin-nay,#mike-payne,#chris-reynolds,#jared-smith {
+    clear:left;
+    margin-left:0;
+}
+
+h3.speaker-name {
+    font-size:1.2em;
+    text-shadow:1px 1px 3px #2a170e;
 }
 
 h1.entry-title {
     font-size:1.5em;
-    text-shadow:1px 1px 0 #C8B3A0;
+    text-shadow:1px 1px 3px #2a170e;
 }
 
 .entry-meta {
@@ -253,7 +249,7 @@ h1.entry-title {
 
 #secondary h1 {
     font-size:1.2em;
-    border-bottom:1px dotted #c26004;
+    border-bottom:1px dotted #51807e;
     margin-bottom:1.2em;
 }
 
@@ -300,7 +296,7 @@ h1.entry-title {
     text-shadow:0 0 1px #fcfaf7;
 }
 
-#secondary ul, #secondary ol {
+#secondary ul,#secondary ol {
     list-style:none;
     margin:0 0 1.5em;
 }
@@ -335,6 +331,10 @@ h1.entry-title {
     ul#menu-top-nav li.menu-item-home {
         display:none;
     }
+    
+    .hentry.speaker {
+        width:100%;
+    }
 }
 
 @media only screen and (max-width: 431px) {
@@ -343,8 +343,22 @@ h1.entry-title {
         display:block;
         margin:auto;
     }
+    
     .site-title {
-        bottom: 30px;
-        position: absolute;
-        width: 100%;
+        bottom:30px;
+        position:absolute;
+        width:96%;
     }
+    
+    .hentry.speaker {
+        width:376px;
+    }
+}
+
+@media only all and (max-width: 520px) {
+  hgroup {
+    -moz-background-size: 520px 39px;
+    background-size: 520px 39px;
+    height: 50px;
+  }
+}
