@@ -233,6 +233,7 @@ h3.speaker-name {
 }
 
 h1.entry-title {
+    color: #a48464;
     font-size:1.5em;
     text-shadow:1px 1px 3px #2a170e;
 }
@@ -261,6 +262,8 @@ h1.entry-title {
     padding:1.5em 0;
     margin:0;
 }
+
+.sponsor-logo img { margin: 5px; }
 
 #colophon {
     clear:both;
